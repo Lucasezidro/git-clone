@@ -1,7 +1,11 @@
-import { Avatar, Box, Flex, Text } from "@chakra-ui/react";
+import { Avatar, Box, Flex, Text, Link, Button, Icon } from "@chakra-ui/react";
 import { Sidebar } from "../components/Sidebar";
+import { StarBox } from "../components/utils/starBox";
+import { Footer } from "../components/utils/Footer";
 
 export default function Home() {
+
+
   return (
     <Flex>
       <Sidebar />
@@ -33,18 +37,9 @@ export default function Home() {
               Lucasezidro starred Lucasezidro/yellow
           </Text>
 
-          <Box
-            pos="relative"
-            top="60px"
-            right="305px"
-            w="500px"
-            borderRadius="10"
-            h="120px"
-            bg="#1E2229"
-            border="1px solid #718096"
-          >
+         <StarBox />
 
-          </Box>
+          <Footer />
         </Box>
       </Box>
     </Flex>
